@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Rock Paper Scissors</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
@@ -13,20 +13,26 @@
 
     <div class="score-board">
       <div class="score-box">
-        <p>COMPUTER SCORE</p>
-        <h2 id="computer-score">0</h2>
+        <p>COMPUTER<br>SCORE</p>
+        <h2 id="pc-score">0</h2>
       </div>
       <div class="score-box">
-        <p>YOUR SCORE</p>
-        <h2 id="user-score">0</h2>
+        <p>YOUR<br>SCORE</p>
+        <h2 id="player-score">0</h2>
       </div>
     </div>
   </div>
 
   <div class="triangle">
-    <button class="choice stone" data-choice="stone">✊</button>
-    <button class="choice paper" data-choice="paper">✋</button>
-    <button class="choice scissor" data-choice="scissor">✌️</button>
+    <button class="choice stone" data-choice="stone">
+      <img src="assets/images/stone.png" alt="rock">
+    </button>
+    <button class="choice paper" data-choice="paper">
+      <img src="assets/images/paper.png" alt="paper">
+    </button>
+    <button class="choice scissor" data-choice="scissor">
+      <img src="assets/images/scissor.png" alt="scissors">
+    </button>
   </div>
 
   <!-- RULES BUTTON -->
@@ -48,6 +54,6 @@
   <div class="close-btn" id="closeRules">X</div>
 </div>
 
-  <script src="script.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
