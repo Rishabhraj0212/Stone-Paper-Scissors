@@ -49,9 +49,12 @@ if (resultText) {
     resultText.innerText = "YOU WIN\nAGAINST PC";
     playerPicked.classList.add("winner");
 
-    setTimeout(() => {
-      window.location.href = "hurray.html";
-    }, 1000);
+    // Show NEXT button
+    // Show NEXT button
+    const showNextBtn = document.getElementById("nextBtn");
+    const rulesBtn = document.getElementById("rulesBtn");
+    if (showNextBtn) showNextBtn.classList.remove("hidden");
+    if (rulesBtn) rulesBtn.style.right = "150px";
   }
   else if (result === "pc") {
     pcScore++;
@@ -61,8 +64,9 @@ if (resultText) {
   }
   else {
     resultText.innerText = "TIE UP";
+    const playAgainBtn = document.getElementById("play-again");
+    if (playAgainBtn) playAgainBtn.innerText = "REPLAY";
   }
-
   if (playerScoreEl) playerScoreEl.innerText = playerScore;
   if (pcScoreEl) pcScoreEl.innerText = pcScore;
 }
@@ -73,6 +77,13 @@ const playAgainBtn = document.getElementById("play-again");
 if (playAgainBtn) {
   playAgainBtn.onclick = () => {
     window.location.href = "index.html";
+  };
+}
+
+const nextBtn = document.getElementById("nextBtn");
+if (nextBtn) {
+  nextBtn.onclick = () => {
+    window.location.href = "hurray.html";
   };
 }
 

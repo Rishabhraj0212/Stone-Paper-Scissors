@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Result</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
   <div class="header">
@@ -43,25 +48,28 @@
   </div>
 
   <!-- RULES BUTTON -->
-  <button class="rules-btn" id="rulesBtn">RULES</button>
+  <button class="rules-btn" id="rulesBtn" style="right: 30px;">RULES</button>
+  <button class="rules-btn hidden" id="nextBtn" style="right: 30px;">NEXT</button>
 
-<!-- RULES POPUP -->
-<div class="rules-popup hidden" id="rulesPopup">
-  <div class="rules-box">
-    <h2>Game Rules</h2>
-    <ul>
-      <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
-      <li>Agree ahead of time whether you'll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
-      <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time.</li>
-      <li>If both players lay down the same hand, each player lays down another hand.</li>
-    </ul>
+  <!-- RULES POPUP -->
+  <div class="rules-popup hidden" id="rulesPopup">
+    <div class="rules-box">
+      <h2>Game Rules</h2>
+      <ul>
+        <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+        <li>Agree ahead of time whether you'll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”
+        </li>
+        <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time.</li>
+        <li>If both players lay down the same hand, each player lays down another hand.</li>
+      </ul>
+    </div>
+
+    <!-- Close Button -->
+    <div class="close-btn" id="closeRules">X</div>
   </div>
-
-  <!-- Close Button -->
-  <div class="close-btn" id="closeRules">X</div>
-</div>
   </div>
 
   <script src="assets/js/script.js"></script>
 </body>
+
 </html>
